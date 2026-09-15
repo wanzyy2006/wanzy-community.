@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wanzy Community | Official Bio Links</title>
+  
+  <!-- Font Awesome & Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Link ke file style.css -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Preloader Screen (Animasi Titik 3 Naik Bergantian & Deteksi Jaringan) -->
+  <div id="preloader" class="preloader-overlay">
+    <div class="preloader-content">
+      <div class="preloader-logo-ring">
+        <i class="fa-solid fa-bolt-lightning neon-icon"></i>
+      </div>
+      <h2 class="preloader-title">Wanzy Community</h2>
+      <p id="preloader-status" class="preloader-status">Memuat ekosistem...</p>
+      
+      <!-- 3 Glowing Dots Wave Animation -->
+      <div class="dots-loader">
+        <span class="dot dot-1"></span>
+        <span class="dot dot-2"></span>
+        <span class="dot dot-3"></span>
+      </div>
+
+      <!-- Indikator Kecepatan Jaringan -->
+      <div class="network-badge">
+        <span class="network-ping-dot"></span>
+        <span id="network-text">Mendeteksi Jaringan...</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ambient Glowing Violet Lights -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Canvas Kupu-Kupu Terbang -->
+  <canvas id="butterflyCanvas"></canvas>
+
+  <!-- Main Card Container -->
+  <main class="linktree-card">
+    
+    <!-- Profile Section -->
+    <header class="profile-header">
+      <div class="avatar-ring">
+        <div class="avatar-inner">
+          <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=300&auto=format&fit=crop&q=80" alt="Avatar" class="profile-img" />
+        </div>
+        <span class="badge-verified" title="Official Verified">
+          <i class="fa-solid fa-check"></i>
+        </span>
+      </div>
+
+      <h1 class="community-title">Wanzy Community</h1>
+      <span class="community-tag">@wanzy.community • 2026</span>
+      <p class="community-bio">
+        The Official Hub for Gamers, Modders & Digital Services. Join the family, connect, and level up together! ✨
+      </p>
+
+      <!-- Quick Social Icons -->
+      <div class="social-pills">
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="social-icon-btn"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://discord.com" target="_blank" aria-label="Discord" class="social-icon-btn"><i class="fa-brands fa-discord"></i></a>
+        <a href="https://youtube.com" target="_blank" aria-label="YouTube" class="social-icon-btn"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://tiktok.com" target="_blank" aria-label="TikTok" class="social-icon-btn"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </header>
+
+    <!-- Interactive Links List -->
+    <section class="links-group">
+      
+      <!-- Link 1: Discord Community -->
+      <a href="https://discord.gg/" target="_blank" class="action-btn highlight">
+        <div class="btn-icon-wrapper">
+          <i class="fa-brands fa-discord"></i>
+        </div>
+        <div class="btn-content">
+          <span class="btn-title">Discord Community Server</span>
+          <span class="btn-subtitle">Update Harian And My Community</span>
+        </div>
+        <div class="btn-badge">JOIN</div>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+
+      <!-- Link 2: WhatsApp / Order & Admin -->
+      <a href="https://wa.me/6280000000000" target="_blank" class="action-btn">
+        <div class="btn-icon-wrapper">
+          <i class="fa-brands fa-tiktok"></i>
+        </div>
+        <div class="btn-content">
+          <span class="btn-title">WhatsApp Admin & Jasa</span>
+          <span class="btn-subtitle">Order Jasa Samp & Roblox</span>
+        </div>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+
+      <!-- Link 3: Store Online -->
+      <a href="https://shopee.co.id/" target="_blank" class="action-btn">
+        <div class="btn-icon-wrapper">
+          <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+        <div class="btn-content">
+          <span class="btn-title">WanzyxXx Market Store</span>
+          <span class="btn-subtitle">Website Pembelian Otomatis</span>
+        </div>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+
+      <!-- Link 4: YouTube Content -->
+      <a href="https://youtube.com/" target="_blank" class="action-btn">
+        <div class="btn-icon-wrapper">
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="btn-content">
+          <span class="btn-title">Official YouTube Channel</span>
+          <span class="btn-subtitle">Share Pengalaman And Private Youtube</span>
+        </div>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+
+      <!-- Link 5: Support / Donasi -->
+      <a href="https://saweria.co/" target="_blank" class="action-btn">
+        <div class="btn-icon-wrapper">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="btn-content">
+          <span class="btn-title">Support Community (Saweria/Trakteer)</span>
+          <span class="btn-subtitle">Bantuan Dari Teman"</span>
+        </div>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-area">
+      <p>© 2026 <span class="accent-text">Wanzy Community</span>. All rights reserved.</p>
+      <p class="credit">Di Buat Pada Tanggal 9,16,2026</p>
+    </footer>
+
+  </main>
+
+  <!-- Link ke file script.js -->
+  <script src="js/butterfly.js"></script>
+</body>
+</html>
